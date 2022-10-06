@@ -7,4 +7,10 @@
     <fullyQualifiedTypeName name="giochi.Decision"/>
     <fullyQualifiedTypeName name="giochi.DiceGame"/>
     <fullyQualifiedTypeName name="interfaccia.Domande"/>
+    <fullyQualifiedTypeName name="versione1.ContoCorrente"/>
+    <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
+    <fullyQualifiedTypeName name="java.awt.geom.FlatteningPathIterator"/>
+    <fullyQualifiedTypeName name="strumenti.Flauto"/>
+    <fullyQualifiedTypeName name="strumenti.Violino"/>
+    <fullyQualifiedTypeName name="strumenti.Violoncello"/>
 </qualifiedTypeNameHistroy>
