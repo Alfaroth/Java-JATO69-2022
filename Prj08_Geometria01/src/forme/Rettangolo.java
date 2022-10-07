@@ -2,26 +2,26 @@ package forme;
 
 public class Rettangolo {
 
-	public double base, altezza;	// public serve perché sia visibile da altri package
+	public Segmento base, altezza;	// public serve perché sia visibile da altri package
 
 	// commento in tipologia javadoc: appare nella tooltip quando il metodo viene utilizzato
 	/** 
 	 * Costruttore del Rettangolo.
-	 * @param b Valore della base. 
-	 * @param h Valore dell'altezza.
+	 * @param base Segmento della base. 
+	 * @param altezza Segmento dell'altezza.
 	 * */
-	public Rettangolo(double b, double h) {
-		base = b;
-		altezza = h;
+	public Rettangolo(Segmento base, Segmento altezza) {
+		this.base = base;
+		this.altezza = altezza;
  	}
 	
 	public double getPerimetro() {
-		return 2*(base+altezza);	
+		return 2*(base.lunghezza() + altezza.lunghezza());	
 	}
 
 
 	public double getArea() {
-		return base*altezza;	
+		return base.lunghezza() * altezza.lunghezza();	
 	}
 	
 	public String getInfo() {
@@ -29,8 +29,13 @@ public class Rettangolo {
 			   "\n Base = " + base +
 			   "\n Altezza = " + altezza +
 			   "\n Perimetro = " + getPerimetro() +
-			   "\n Area = " + getArea();
-			   
+			   "\n Area = " + getArea();			   
+	}
+	
+	@Override
+	public String toString() {
+		return "Rettangolo [base=" + base + ", altezza=" + altezza + ", getPerimetro()=" + getPerimetro()
+				+ ", getSuperficie()=" + getArea() + "]";
 	}
 	
 }

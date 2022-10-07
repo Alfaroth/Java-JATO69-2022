@@ -13,4 +13,7 @@
     <fullyQualifiedTypeName name="strumenti.Flauto"/>
     <fullyQualifiedTypeName name="strumenti.Violino"/>
     <fullyQualifiedTypeName name="strumenti.Violoncello"/>
+    <fullyQualifiedTypeName name="forme.Triangolo"/>
+    <fullyQualifiedTypeName name="forme.Stanza"/>
+    <fullyQualifiedTypeName name="forme.Quadrato"/>
 </qualifiedTypeNameHistroy>

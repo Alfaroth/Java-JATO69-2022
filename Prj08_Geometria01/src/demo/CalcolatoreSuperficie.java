@@ -16,7 +16,8 @@ public class CalcolatoreSuperficie {
 		
 		/*
 		for (int i = 0; i < stanze.length; i++) {
-			stanze[i].getArea();
+			System.out.println(stanze[i].getArea());
+
 		}
 		*/
 		

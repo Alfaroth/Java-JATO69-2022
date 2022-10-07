@@ -1,24 +1,54 @@
 package demo;
 
-import forme.Rettangolo;	// devo importare il file Rettangolo.java del package forme per poter utilizzare l'oggetto Rettangolo
+//devo importare i file del package forme per poter utilizzare i loro oggetti
+import forme.Punto;
+import forme.Quadrato;
+import forme.Rettangolo;	
+import forme.Segmento;
+import forme.Triangolo;
+
 
 public class Geometria {
 
 	public static void main(String[] args) {
 
-		Rettangolo r1 = new Rettangolo(4, 3);	// posso vedere il commento javadoc di Rettangolo() nella sua tooltip
-		/*
-		System.out.println(r1);		// stampa il riferimento all'oggetto r1 in memoria
-		System.out.println(r1.altezza);
+		Punto a = new Punto(3,2);
+        Punto b = new Punto(8,2);
+        Punto c = new Punto(3,6);
 		
-		System.out.println("Perimetro: " + r1.getPerimetro());
-		System.out.println("Area: " + r1.getArea());
-		*/
-		System.out.println(r1.getInfo());
+        Segmento ab = new Segmento (a,b);
+        System.out.println("Lunghezza segmento ab = " + ab.lunghezza());
+        
+        Segmento ac = new Segmento(a,c);
+        System.out.println("Lunghezza segmento ac = " + ac.lunghezza());
+        
+        Segmento bc = new Segmento(b,c);
+        System.out.println("Lunghezza segmento bc = " + bc.lunghezza());
 
-		Rettangolo r2 = new Rettangolo(5, 4);
-		System.out.println(r2.getInfo());
+		Triangolo t1 = new Triangolo(a, b, c);
+		System.out.println("Perimetro del triangolo abc = " + t1.getPerimetro());
+		System.out.println("Area del triangolo abc = " + t1.getArea());
+
+		Rettangolo r1 = new Rettangolo(ab, bc);		// posso vedere il commento javadoc di Rettangolo() nella sua tooltip
+						
+		System.out.println(r1);
 		
+		Quadrato q1 = new Quadrato(ab);
+		System.out.println(q1);
+        
 	}
 
 }
+/*
+
+
+
+
+
+
+
+
+    }
+
+}
+*/
