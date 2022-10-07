@@ -1,5 +1,6 @@
 package interfaccia;
 
+import giochi.CartaForbiceSasso;
 import giochi.Decision;
 import giochi.DiceGame;
 
@@ -21,7 +22,7 @@ public class Console {
 				break;
 				
 			case "2":
-				System.out.println("Non ancora disponibile.");
+				CartaForbiceSasso.play();
 				break;
 				
 			case "3":
