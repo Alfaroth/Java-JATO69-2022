@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CartaForbiceSasso {
 
-	public static void play() {
+	public static String play() {
 
 		String segno = getSegno();
 		String segnoUtente = getSegnoUtente();
@@ -12,19 +12,19 @@ public class CartaForbiceSasso {
 		System.out.println("Hai giocato " + segnoUtente + " contro " + segno + ".") ;
 		
 		if (segno == segnoUtente)
-			System.out.println("Pareggio");
+			return "Pareggio!";
 		else if (segnoUtente == "Carta" && segno == "Sasso")
-			System.out.println("Hai vinto!");
+			return "Hai vinto!";
 		else if (segnoUtente == "Carta" && segno == "Forbice")
-			System.out.println("Hai perso!");
+			return "Hai perso!";
 		else if (segnoUtente == "Forbice" && segno == "Carta")
-			System.out.println("Hai vinto!");
+			return "Hai vinto!";
 		else if (segnoUtente == "Forbice" && segno == "Sasso")
-			System.out.println("Hai perso!");
+			return "Hai perso!";
 		else if (segnoUtente == "Sasso" && segno == "Carta")
-			System.out.println("Hai perso!");
+			return "Hai perso!";
 		else 
-			System.out.println("Hai vinto!");
+			return "Hai vinto!";
 		
 	}
 
@@ -55,7 +55,10 @@ public class CartaForbiceSasso {
 	public static String getSegnoUtente() {
 		
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Scegli un segno da giocare:\n1) Carta\n2) Forbice\n3) Sasso");
+		System.out.println("Scegli un segno da giocare:\n" +
+						   "1) Carta\n" + 
+						   "2) Forbice\n" +
+						   "3) Sasso");
 		String segno = null;
 		int scelta = kb.nextInt();
 		

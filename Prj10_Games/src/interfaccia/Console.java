@@ -22,7 +22,7 @@ public class Console {
 				break;
 				
 			case "2":
-				CartaForbiceSasso.play();
+				System.out.println(CartaForbiceSasso.play());
 				break;
 				
 			case "3":
