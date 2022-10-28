@@ -2,7 +2,7 @@ package model;
 
 public class Bolletta {
 
-	protected double importo;
+	protected double importo;	// può essere vista dalle altre classi dello stesso package o dalle sottoclassi di Bolletta
 
 	public Bolletta(double importo) {
 		this.importo = importo;
