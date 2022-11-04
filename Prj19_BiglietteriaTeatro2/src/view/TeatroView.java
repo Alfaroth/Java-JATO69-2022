@@ -10,7 +10,7 @@ public class TeatroView {
 	public static void main(String[] args) {
 		
 		TeatroController ctrl = new TeatroController();
-		ctrl.addTeatro("Intervallo");
+		// ctrl.addTeatro("Intervallo");
 		ArrayList<Teatro> elencoTeatri = ctrl.elencoTeatri();
 		
 		elencoTeatri.get(3).getPosti().get(0).setDisponibile(false);
@@ -23,7 +23,7 @@ public class TeatroView {
 		for (Teatro teatro : elencoTeatri) {
 			System.out.println(teatro);
 		}
-		
+	
 	}
 	
 }

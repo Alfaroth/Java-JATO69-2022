@@ -123,28 +123,28 @@ public class Teatro {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("\nTeatro [nome=");
+		builder.append("\nTeatro '");
 		builder.append(nome);
-		builder.append(", posti=");
+		builder.append("', ID: ");
+		builder.append(id);
+		builder.append("\nPosti:\n");
+		
 		// builder.append(posti);
 		for (int i = 0; i < posti.size(); i++) {
-			System.out.print(posti.get(i));
+			builder.append(posti.get(i));
 			if (posti.get(i).getNumero() % 5==0) {
-				System.out.println();
+				builder.append("\n");
 			}
 		}
 		
-		builder.append(", id=");
-		builder.append(id);
-		builder.append(", platea=");
+		builder.append("Posti platea: ");
 		builder.append(platea);
-		builder.append(", galleria=");
+		builder.append("\nPosti galleria: ");
 		builder.append(galleria);
-		builder.append(", palco=");
+		builder.append("\nPosti palco: ");
 		builder.append(palco);
-		builder.append(", postiDisabili=");
+		builder.append("\nPosti per disabili: ");
 		builder.append(postiDisabili);
-		builder.append("]");
 		return builder.toString();
 	}
 	
