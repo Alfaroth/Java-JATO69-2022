@@ -1,11 +1,21 @@
-<h1>Login</h1>
+<div class="container">
 
-<form action="login" method="post">
+	<h1 class="title">Login</h1>
 	
-	<input type="text" name="username" placeholder="Username">
-	<br>
-	<input type="password" name="password" placeholder="Password">
-	<br>
-	<input type="submit" value="login">
-		
-</form>
+	<form action="login" class="center col-6" method="post">
+	
+		<div class="form-group">
+			<label for="username">Username</label>
+			<input class="form-control" type="text" name="username" id="username" placeholder="Username">
+		</div>
+	
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input class="form-control" type="text" name="password" id="password" placeholder="Password">
+		</div>
+	
+		<input type="submit" class="btn btn-primary" value="Login">
+	
+	</form>
+	
+</div>
