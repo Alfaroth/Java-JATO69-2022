@@ -20,7 +20,7 @@ public class Connessione {
 	}
 	
 	private void connetti() {
-		
+			
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e1) {
@@ -32,22 +32,25 @@ public class Connessione {
 			System.out.println("Connessione aperta.");
 		} catch (SQLException e) {
 			System.err.println("Si è verificato un errore: " + e.getMessage());
-			// e.printStackTrace();
 		}
 	}
 	
 	public void disconnetti() {
+		
 		if (conn != null) {
+			
 			try {
 				conn.close();
 			} catch (SQLException e) {
 				System.err.println("Si è verificato un errore: " + e.getMessage());
-				// e.printStackTrace();
 			}
+			
 		} else {
 			System.out.println("Sei già disconnesso.");
 		}
+		
 		System.out.println("Connessione chiusa.");
+		
 	}
 	
 }

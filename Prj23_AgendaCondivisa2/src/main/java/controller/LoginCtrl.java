@@ -11,6 +11,8 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/login")
 public class LoginCtrl extends HttpServlet {
 
+	AgendaCtrl aCtrl = new AgendaCtrl();
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
