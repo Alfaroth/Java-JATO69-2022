@@ -1,11 +1,38 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="model.Appuntamento"%>
 <%@page import="java.util.ArrayList"%>
-<h1>agenda</h1>
 
 <%
-	ArrayList<Appuntamento> appuntamenti = (ArrayList<Appuntamento>) request.getAttribute("elencoAppuntamenti");
+ArrayList<Appuntamento> appuntamenti = (ArrayList<Appuntamento>) request.getAttribute("elencoAppuntamenti");
 %>
 
-<% for (Appuntamento a : appuntamenti ){ %>
-	<p>  <%= a.getDescrizione() %>   </p>
-<% } %>
+<div class="col-6 center">
+
+	<table class="table table-striped">
+	
+		<caption class="tableTitle">Elenco degli Appuntamenti</caption>
+		
+		<thead>
+			<tr>
+				<th>Ora</th>
+				<th>Descrizione</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+
+
+			<% for (Appuntamento a : appuntamenti) { %>
+
+			<tr>
+				<td><%=a.getOra()%></td>
+				<td><%=a.getDescrizione()%></td>
+			</tr>
+
+			<% } %>
+
+		</tbody>
+		
+	</table>
+	
+</div>

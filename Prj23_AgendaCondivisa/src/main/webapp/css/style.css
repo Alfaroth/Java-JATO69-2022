@@ -1,8 +1,28 @@
-body {
-    background-color: lightblue;
-    font-family: 'Lato', sans-serif;
+@charset "utf-8";
+
+html, body {
+    height: 100%;
 }
 
+*,::after,::before {
+    box-sizing:border-box;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    line-height: 1.47;
+}
+
+table {
+    border-collapse: collapse;
+}
 .title {
     text-align: center;
     margin-bottom: 3rem;
@@ -12,11 +32,19 @@ body {
     width: 1200px;
     padding: 1rem;
     background-color: white;
-    margin: 0 auto;
+    margin: 0  auto;    
+}
+
+.container-main {
+    min-height: calc(100% - 88.51px);
+}
+
+.container-footer {
+    border-top: 1px solid lightgray;
 }
 
 .center {
-    margin: 0 auto;
+    margin: 0  auto;
 }
 
 .col-6 {
@@ -31,38 +59,72 @@ form {
     margin-bottom: 1rem;
 }
 
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
 .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding : .375rem .75rem;
     line-height: 1.5rem;
     border: 1px solid #ced4da;
     border-radius: .25rem;
 }
 
 .btn {
-    padding: .1875rem .375rem;
+    padding: .375rem .75rem;
     display: inline-block;
     text-align: center;
-    border-radius: .25rem;
-    border: 1px solid transparent;
+    border:1px solid transparent;
     background-color: transparent;
+    border-radius: .25rem;
     cursor: pointer;
 }
 
 .btn-primary {
-    color: white;
+    color:white;
     background-color: #dc3545;
     border-color: #dc3545;
 }
 
 .btn-secondary {
-    color: white;
-    background-color: #6c757d;
+    color:white;
+    background-color:#6c757d;
 }
 
+.table {
+    width: 100%;
+}
 
-label {
-    display: inline-block;
-    margin-bottom: .5rem;
+.table-striped tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table th,.table td {
+    padding: .75rem;
+    border-top: 1px solid lightgray;
+}
+
+.tableTitle {
+    padding: .75rem;
+    font-size: 1.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-5 {
+    margin-top: 2rem;
+}
+
+.mr-3 {
+    margin-right: 1rem;
+}
+
+.btn:disabled {
+    opacity:.65;
+    cursor:default;
 }
