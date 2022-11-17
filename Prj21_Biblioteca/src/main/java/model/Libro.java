@@ -1,6 +1,6 @@
 package model;
 
-public class Libro {
+public class Libro implements Comparable<Libro> {
 
 	private int id;
 	private String titolo;
@@ -29,6 +29,11 @@ public class Libro {
 	@Override
 	public String toString() {
 		return "Libro [id=" + id + ", titolo=" + titolo + "]";
+	}
+	
+	@Override
+	public int compareTo(Libro altro) {
+		return altro.id - this.id;
 	}
 		
 }

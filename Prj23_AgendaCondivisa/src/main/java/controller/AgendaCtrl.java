@@ -55,11 +55,9 @@ public class AgendaCtrl extends HttpServlet {
 		
 		String descrizione = request.getParameter("descrizione").equals("")?"---":request.getParameter("descrizione");
 		
-		/*
-		if (descrizione.equals("") {
+		if (descrizione.equals("")) {
 			descrizione = "---";
 		}
-		*/
 		
 		if(request.getParameter("ora") != null && !request.getParameter("ora").equals("")) {
 			String oraStr= request.getParameter("ora");

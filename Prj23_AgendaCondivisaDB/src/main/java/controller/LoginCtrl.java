@@ -9,9 +9,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/login")
-public class LoginCtrl extends HttpServlet {
+public class LoginCtrl extends HttpServlet 	 {
 
-	AgendaCtrl aCtrl = new AgendaCtrl();
+	AgendaCtrl aCtrl = new AgendaCtrl(); 
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,7 +21,7 @@ public class LoginCtrl extends HttpServlet {
 		
 		// resp.sendRedirect("formLogin.jsp");
 		
-		req.getRequestDispatcher("header.jsp").include(req, resp);
+		req.getRequestDispatcher("header.jsp").include(req, resp);		
 		req.getRequestDispatcher("formLogin.jsp").include(req, resp);
 		req.getRequestDispatcher("footer.jsp").include(req, resp);
 		
@@ -41,7 +41,8 @@ public class LoginCtrl extends HttpServlet {
 			req.getRequestDispatcher("areaRiservata.jsp").include(req, resp);
 			// aCtrl.doGet(req, resp);
 			req.getRequestDispatcher("footer.jsp").include(req, resp);
-			
+			req.getSession().setAttribute("loggato", "ok");
+
 		} else {
 			doGet(req, resp); // rimando nuovamente al metodo doGet se i dati login sono errati
 		}
