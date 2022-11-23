@@ -1,12 +1,12 @@
-</main> <!--  fine contenuto Principale -->
+		</main> <!--  fine contenuto Principale -->
 
-</div> <!-- fine container -->
+	</div> <!-- fine container -->
 
-<div class="container-footer container">
-	<footer>
-		<p>Davide Valerio</p>
-	</footer>
-</div>
+	<div class="container-footer container">
+		<footer>
+			<p>Davide Valerio</p>
+		</footer>
+	</div>
 
 </body>
 

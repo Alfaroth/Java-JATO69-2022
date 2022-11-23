@@ -134,7 +134,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Prj20_HelloTomcat" path="/Prj20_HelloTomcat" reloadable="true" source="org.eclipse.jst.jee.server:Prj20_HelloTomcat"/><Context docBase="Prj21_Biblioteca" path="/Prj21_Biblioteca" reloadable="true" source="org.eclipse.jst.jee.server:Prj21_Biblioteca"/><Context docBase="Prj23_AgendaCondivisa" path="/Prj23_AgendaCondivisa" reloadable="true" source="org.eclipse.jst.jee.server:Prj23_AgendaCondivisa"/><Context docBase="Prj23_AgendaCondivisaDB" path="/Prj23_AgendaCondivisaDB" reloadable="true" source="org.eclipse.jst.jee.server:Prj23_AgendaCondivisaDB"/></Host>
+      <Context docBase="Prj20_HelloTomcat" path="/Prj20_HelloTomcat" reloadable="true" source="org.eclipse.jst.jee.server:Prj20_HelloTomcat"/><Context docBase="Prj21_Biblioteca" path="/Prj21_Biblioteca" reloadable="true" source="org.eclipse.jst.jee.server:Prj21_Biblioteca"/><Context docBase="Prj23_AgendaCondivisa" path="/Prj23_AgendaCondivisa" reloadable="true" source="org.eclipse.jst.jee.server:Prj23_AgendaCondivisa"/><Context docBase="Prj23_AgendaCondivisaDB" path="/Prj23_AgendaCondivisaDB" reloadable="true" source="org.eclipse.jst.jee.server:Prj23_AgendaCondivisaDB"/><Context docBase="Prj26_GestionaleDB" path="/Prj26_GestionaleDB" reloadable="true" source="org.eclipse.jst.jee.server:Prj26_GestionaleDB"/></Host>
     </Engine>
   </Service>
 </Server>
