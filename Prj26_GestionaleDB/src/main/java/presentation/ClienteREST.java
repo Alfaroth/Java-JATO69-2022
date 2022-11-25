@@ -27,14 +27,12 @@ public class ClienteREST extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		request.getRequestDispatcher("main/header.jsp").include(request, response);
 		request.getRequestDispatcher("main/menu.jsp").include(request, response);
 		
-		response.getWriter().append("<h1>Clienti</h1>");
+		response.getWriter().append("<h2 class=\"mt-5 display-6\">Clienti</h2>");
 		
 		request.getRequestDispatcher("main/footer.jsp").include(request, response);
-		
 	}
 
 	@Override

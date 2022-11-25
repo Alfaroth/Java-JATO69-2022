@@ -4,25 +4,31 @@
 <%@ include file="main/menu.jsp" %>
 
 
-<h1>Gestionale Ordini</h1>
+<div class="card my-3">
+  <div class="card-header">
+    <h2 class="h5">Pagine MVC</h2>
+  </div>
+  <ul class='list-group'>
+    <li class='list-group-item'> <a href="articoli">Articoli</a> </li>
+    <li class='list-group-item'> <a href="impiegati">Impiegati</a> </li>
+    <li class='list-group-item'> <a href="clienti">Clienti</a> </li>
+    <li class='list-group-item'> <a href="ordini">Ordini</a> </li>
+    <li class='list-group-item'> <a href="uffici">Uffici</a> </li>
+  </ul>
+</div>
 
-<h2>Pagine MVC</h2>
-<ul>
-  <li> <a href="clienti">clienti</a> </li>
-  <li> <a href="impiegati">impiegati</a> </li>
-  <li> <a href="uffici">uffici</a> </li>
-  <li> <a href="articoli">articoli</a> </li>
-  <li> <a href="ordini">ordini</a> </li>
-</ul>
-
-<h2>API endpoint REST</h2>
-<ul>
-  <li> <a href="api/clienti">clienti</a> </li>
-  <li> <a href="api/impiegati">impiegati</a> </li>
-  <li> <a href="api/uffici">uffici</a> </li>
-  <li> <a href="api/articoli">articoli</a> </li>
-  <li> <a href="api/ordini">ordini</a> </li>
-</ul>
+<div class="card my-3">
+  <div class="card-header">
+    <h2 class="h5">API endpoint REST</h2>
+  </div>
+  <ul class='list-group'>
+    <li class='list-group-item'> <a href="api/articoli">Articoli</a> </li>
+    <li class='list-group-item'> <a href="api/impiegati">Impiegati</a> </li>
+    <li class='list-group-item'> <a href="api/clienti">Clienti</a> </li>
+    <li class='list-group-item'> <a href="api/ordini">Ordini</a> </li>
+    <li class='list-group-item'> <a href="api/uffici">Uffici</a> </li>
+  </ul>
+</div>
 
 
 <%@ include file="main/footer.jsp" %>
