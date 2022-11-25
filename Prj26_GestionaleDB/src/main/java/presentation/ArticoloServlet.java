@@ -34,9 +34,16 @@ public class ArticoloServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.setContentType("text/html");
+		request.getRequestDispatcher("main/header.jsp").include(request, response);
+		request.getRequestDispatcher("main/menu.jsp").include(request, response);
 		
 		response.getWriter().append("<h1>Articoli</h1>");
+		
+		request.setAttribute("elenco", this.ctrl.getArticoli());
+		
+		request.getRequestDispatcher("articoli/list.jsp").include(request, response);
+
+		request.getRequestDispatcher("main/footer.jsp").include(request, response);
 	
 	}
 
@@ -44,10 +51,12 @@ public class ArticoloServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		
-		
-		
+		String descrizione = request.getParameter("descrizione");
+		String categoria = request.getParameter("categoria");
+		double prezzo = Double.parseDouble(request.getParameter("prezzo"));
+		int rimanenza = Integer.parseInt(request.getParameter("rimanenza"));
+				
 		doGet(request, response);
 	}
 
