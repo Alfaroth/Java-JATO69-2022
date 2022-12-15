@@ -14,4 +14,13 @@ public class Quadrato extends Rettangolo {		// Quadrato è un sottotipo di Retta
 		return "Quadrato [lato=" + lato + ", toString()=" + super.toString() + "]";
 	}
 	
+	public void stampaQuadrato() {
+		System.out.println("Sono il metodo stampaQuadrato");
+	}
+	
+	@Override
+	public double getArea() {
+		return this.lato.lunghezza() * this.lato.lunghezza();
+	}
+	
 }

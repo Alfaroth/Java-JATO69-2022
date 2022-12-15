@@ -21,6 +21,7 @@ public class Rettangolo {
 
 
 	public double getArea() {
+		System.out.println("Metodo del rettangolo");
 		return base.lunghezza() * altezza.lunghezza();	
 	}
 	

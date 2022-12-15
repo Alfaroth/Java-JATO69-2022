@@ -33,8 +33,9 @@ public class Geometria {
 						
 		System.out.println(r1);
 		
-		Quadrato q1 = new Quadrato(ab);
+		Rettangolo q1 = new Quadrato(ab);
 		System.out.println(q1);
+		((Quadrato)q1).stampaQuadrato();
         
 	}
 
